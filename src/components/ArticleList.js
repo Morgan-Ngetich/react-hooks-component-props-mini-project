@@ -2,6 +2,7 @@ import blogData from "../data/blog"
 import Article from "./Article"
 
 function ArticleList () {
+  
   const { posts } = blogData
   return (
     <main>
@@ -11,6 +12,7 @@ function ArticleList () {
          title = {post.title}
          date = {post.date}
          preview = {post.preview}
+         minutes = {post.minutes}
       />
     ))}
     </main>
